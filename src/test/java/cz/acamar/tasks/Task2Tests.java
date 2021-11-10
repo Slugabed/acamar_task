@@ -2,6 +2,8 @@ package cz.acamar.tasks;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class Task2Tests {
@@ -24,4 +26,27 @@ public class Task2Tests {
         assertArrayEquals(expected, task2.squaresOfSortedArray(input));
     }
 
+    @Test
+    void test_case3() {
+        int[] input = new int[]{2, 3, 11};
+        int[] expected = Arrays.stream(Arrays.copyOf(input, input.length))
+                .map(v -> v * v).toArray();
+
+        assertArrayEquals(expected, task2.squaresOfSortedArray(input));
+    }
+
+    @Test
+    void test_case4() {
+        int[] input = new int[]{-11, -10, -3};
+        int[] expected = new int[]{9, 100, 121};
+
+        assertArrayEquals(expected, task2.squaresOfSortedArray(input));
+    }
+
+    @Test
+    void test_case5() {
+        int[] input = new int[]{};
+
+        task2.squaresOfSortedArray(input);
+    }
 }
