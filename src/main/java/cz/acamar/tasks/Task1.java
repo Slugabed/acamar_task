@@ -1,7 +1,7 @@
 package cz.acamar.tasks;
 
 public class Task1 {
-
+    public static final String WHITESPACE = " ";
     /**
      * Task 1. Length of the last word.
      * <p>
@@ -17,6 +17,7 @@ public class Task1 {
      * @return - the length of the last word in the string.
      */
     public int lengthOfLastWord(String str) {
-        return 0;
+        var words = str.split(WHITESPACE);
+        return words[words.length - 1].length();
     }
 }
