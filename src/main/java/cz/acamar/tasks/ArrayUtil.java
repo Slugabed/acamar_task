@@ -5,6 +5,11 @@ import java.util.Arrays;
 public class ArrayUtil {
     private ArrayUtil() {}
 
+    /**
+     * Finds first non negative element in array
+     * @param input array where non negative element must be found
+     * @return index of first non negative element
+     */
     public static int indexOfFirstNonNegative(int[] input) {
         for (int i = 0; i < input.length; i++) {
             if (input[i] >= 0) {
@@ -59,14 +64,22 @@ public class ArrayUtil {
         return result;
     }
 
-
-
+    /**
+     * Square elements of array in-place
+     * @param input input array
+     */
     public static void squareArray(int[] input) {
         for (int i = 0; i < input.length; i++) {
             input[i] *= input[i];
         }
     }
 
+    /**
+     * Reverse part of input array in-place
+     * @param input array which part will be reversed
+     * @param startIndex start index of range to be reversed
+     * @param length length of range to be reversed
+     */
     public static void reverse(int[] input, int startIndex, int length) {
         if (input.length == 0) {
             return;
