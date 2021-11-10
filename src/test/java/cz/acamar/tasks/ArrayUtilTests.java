@@ -58,7 +58,7 @@ public class ArrayUtilTests {
     @Test
     void testSquareArray() {
         int[] input = {1, 2, 3, 4, -4, -3, -2, -1};
-        int[] expected = Arrays.stream(input).map(v -> v*v).toArray();
+        int[] expected = Arrays.stream(input).map(v -> v * v).toArray();
 
         ArrayUtil.squareArray(input);
 

@@ -3,10 +3,12 @@ package cz.acamar.tasks;
 import java.util.Arrays;
 
 public class ArrayUtil {
-    private ArrayUtil() {}
+    private ArrayUtil() {
+    }
 
     /**
      * Finds first non negative element in array
+     *
      * @param input array where non negative element must be found
      * @return index of first non negative element
      */
@@ -21,6 +23,7 @@ public class ArrayUtil {
 
     /**
      * Sorts array in ascending order which consists of two already sorted in ascending order subarrays
+     *
      * @param input array with sorted subarrays
      * @param pivot starting index of second sorted subarray
      * @return new sorted array consisting of the elements of the input array
@@ -66,6 +69,7 @@ public class ArrayUtil {
 
     /**
      * Square elements of array in-place
+     *
      * @param input input array
      */
     public static void squareArray(int[] input) {
@@ -76,9 +80,10 @@ public class ArrayUtil {
 
     /**
      * Reverse part of input array in-place
-     * @param input array which part will be reversed
+     *
+     * @param input      array which part will be reversed
      * @param startIndex start index of range to be reversed
-     * @param length length of range to be reversed
+     * @param length     length of range to be reversed
      */
     public static void reverse(int[] input, int startIndex, int length) {
         if (input.length == 0) {

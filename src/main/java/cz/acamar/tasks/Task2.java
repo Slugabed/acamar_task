@@ -1,7 +1,5 @@
 package cz.acamar.tasks;
 
-import java.util.List;
-
 public class Task2 {
 
     /**
