@@ -19,6 +19,9 @@ public class Task1 {
      */
     public int lengthOfLastWord(String str) {
         var words = str.split(WHITESPACE);
+        if (words.length == 0) {
+            return 0;
+        }
         return words[words.length - 1].length();
     }
 }
