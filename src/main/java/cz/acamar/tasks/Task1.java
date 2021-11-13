@@ -1,7 +1,7 @@
 package cz.acamar.tasks;
 
 public class Task1 {
-    public static final String WHITESPACE = " ";
+    private static final String WHITESPACE = " ";
 
     /**
      * Task 1. Length of the last word.
