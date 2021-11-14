@@ -29,8 +29,6 @@ public class Task2 {
         if (firstNonNegativeIndex == -1) {
             ArrayUtil.reverse(input, 0, input.length);
             return input;
-        } else if (firstNonNegativeIndex == 0) {
-            return input;
         } else {
             ArrayUtil.reverse(input, 0, firstNonNegativeIndex);
             return ArrayUtil.mergeSorted(input, firstNonNegativeIndex);
