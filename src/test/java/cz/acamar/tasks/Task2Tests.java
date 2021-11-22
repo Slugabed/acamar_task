@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Task2Tests {
 
@@ -48,5 +49,14 @@ public class Task2Tests {
         int[] input = new int[]{};
 
         task2.squaresOfSortedArray(input);
+    }
+
+    @Test
+    void test_case6() {
+        int[] input = new int[]{-1, -2, -3, 1, 2, 3};
+        int[] originalInput = Arrays.copyOf(input, input.length);
+
+        task2.squaresOfSortedArray(input);
+        assertArrayEquals(input, originalInput, "The input array must remain the same");
     }
 }
