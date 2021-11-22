@@ -1,5 +1,7 @@
 package cz.acamar.tasks;
 
+import java.util.Arrays;
+
 public class Task2 {
 
     /**
@@ -21,6 +23,7 @@ public class Task2 {
         if (input == null) {
             return null;
         }
+        input = Arrays.copyOf(input, input.length);
 
         int firstNonNegativeIndex = ArrayUtil.indexOfFirstNonNegative(input);
 
